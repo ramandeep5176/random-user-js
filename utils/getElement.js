@@ -1,7 +1,6 @@
-const getElement = (selection) => {
+function getElement(selection) {
   const element = document.querySelector(selection);
   if (element) return element;
-  throw new Error(`missing selected element`);
-};
-
+  else throw new Error("check spelling of selection");
+}
 export default getElement;
